@@ -1,0 +1,64 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+  {}
+
+.cotainer {
+  position: relative;
+  width: 1440px;
+  height: 2711px;
+  height: 80%;
+}
+
+header {
+  background-image: url(images/bicycling-1160860_640.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #ffffff;
+}
+header nav {
+  background-color: #333333;
+  height: 60px;
+}
+section {
+  position: absolute;
+  width: 1280px;
+  height: 1577px;
+  left: 80px;
+  top: 320px;
+
+  background: #F3F0F0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  justify-content: center;
+  grid-auto-rows: dense;
+  grid-gap: 20px;
+}
+
+.one {
+  width: 400px;
+  height: 681px;
+
+}
+
+.two {
+  width: 400px;
+  height: 846px;
+
+}
+
+.three {
+  width: 400px;
+  height: 679px;
+
+}
+
+.one {
+  width: 400px;
+  height: 681px;
+
+}

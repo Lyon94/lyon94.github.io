@@ -16,14 +16,16 @@ body {
 
 header {
   background-image: url(images/bicycling-1160860_640.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
 }
+
 header nav {
   background-color: #333333;
   height: 60px;
 }
+/* can this be replaced with flexbox instead */
 section {
   position: absolute;
   width: 1280px;

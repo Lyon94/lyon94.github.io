@@ -91,7 +91,6 @@ header input[type="text"] {
 
 
 section .fact {
-  /* margin: 9rem auto 1rem; */
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: minmax(100px, auto);
@@ -133,7 +132,6 @@ section .locations {
 }
 
 .locations>div {
-  /* background: rgba(4, 4, 4, 0.6); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 17vh 5vw;
@@ -168,7 +166,6 @@ section .locations {
 .jos p,
 .abuja p {
   margin-left: -3rem;
-  /* padding-left: 2px; */
   margin-bottom: -4rem;
   line-height: normal;
   font: normal bold 18px Catamaran;
@@ -207,64 +204,50 @@ section>p a {
   line-height: normal;
 }
 
-.blog {
-  background-image: url(images/pico.jpg);
+.on-the-blog {
+  position: relative;
+  height: 78.2vh;
+  background: url("images/pico.jpg");
   background-size: auto;
-  height: 76vh;
   background-repeat: no-repeat;
   background-position: 100%, 100%;
-  /* padding: 4vh 1vh 3vh 19vh; */
-  position: relative;
-  /* z-index: 0;  */
 }
 
-.blog .hang-out {
-  background: linear-gradient(180deg, #E36E55 0%, #D78F52 100%);
-  height: 100%;
-  width: 41vw;
-  clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
-
-  /* display: flex; */
-  /* justify-content: center; */
-
-  /* top: 0;
-  left: 0; */
-  /* flex-direction: column; */
-  /* */
-  /* background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  padding: 35vh 1rem 30vh 25vh; */
-  /* clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%); */
-  /* margin-top: -2rem; */
-  /* height: 60vh; */
-  /*  */
-  /* */
-
-}
-
-.hang-out #label {
-  font: normal bold 72px Catamaran;
-  line-height: 77px;
-  color: #FFFFFF;
+.on-the-blog .absolute {
   position: absolute;
-  z-index: 7;
-  top: 20%;
-  left: 30%;
-  /* padding: 4.5rem 2% 4.5rem 24%; */
-  /* padding: 4.5rem 2% 4.5rem 10%; */
-  /* padding-top: 2rem; */
-  /* margin: 1rem auto; */
+  top: 0;
+  height: 100%;
+  width: 41%;
+  background: linear-gradient(#E36E55, #D78F52);
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.hang-out h5 {
+.on-the-blog .text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  padding-left: 7.5rem;
+  height: 100%;
+  width: 47%;
+  z-index: 10;
+}
 
+.on-the-blog .text h5 {
   font: normal bold 18px Catamaran;
   line-height: normal;
   letter-spacing: 0.1em;
   color: #FEBE61;
+  margin-bottom: -2rem;
 }
 
+.on-the-blog .text h1 {
+  width: 100%;
+  font: normal bold 72px Catamaran;
+  line-height: 77px;
+  color: #FFFFFF;
+}
 
 footer {
   height: 80px;
@@ -288,93 +271,4 @@ footer :last-child {
   line-height: normal;
   text-decoration: none;
   color: #A9A9A9;
-}
-
-
-.mother {
-  /* background: linear-gradient(180deg, #E36E55 0%, #D78F52 100%); */
-  position: relative;
-  height: 78.2vh;
-  z-index: 1;
-}
-
-.father {
-  float: right;
-  position: static;
-  z-index: 10;
-}
-
-.solvable {
-  font-size: 35px;
-  height: 78.2vh;
-  /* padding: 3rem 0 3rem 10%; */
-  width: 41vw;
-  clip-path: polygon(0 0, 100% 0, 68% 100%, 0% 100%);
-  background: linear-gradient(180deg, #E36E55 0%, #D78F52 100%);
-  position: absolute;
-  z-index: 30;
-}
-
-.solvable #label {
-
-  position: absolute;
-  z-index: 70;
-
-  padding: 3rem 2% 3rem 46%;
-}
-
-
-
-
-.on-the-blog {
-  position: relative;
-  /* height: 450px; */
-  height: 78.2vh;
-  background: url("images/pico.jpg");
-  /* background-position: center; */
-  /* background-size: cover; */
-  background-size: auto;
-  /* height: 76vh; */
-  background-repeat: no-repeat;
-  background-position: 100%, 100%;
-}
-
-.on-the-blog .absolute {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 41%;
-  background: linear-gradient(#E36E55, #D78F52);
-  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-}
-
-.on-the-blog .text {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* padding: 3rem 0 3rem 10%;  */
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  top: 0;
-  padding-left: 7.5rem;
-  height: 100%;
-  width: 47%;
-  z-index: 10;
-}
-
-.on-the-blog .text h5 {
-  font: normal bold 18px Catamaran;
-  line-height: normal;
-  letter-spacing: 0.1em;
-  color: #FEBE61;
-  margin-bottom: -2rem;
-}
-
-.on-the-blog .text h1 {
-  /* padding-top: 1rem; */
-  width: 100%;
-  font: normal bold 72px Catamaran;
-  line-height: 77px;
-  color: #FFFFFF;
 }

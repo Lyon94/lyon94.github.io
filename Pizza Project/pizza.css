@@ -257,20 +257,6 @@ footer .operations :last-child {
 }
 
 
-.mid {
-  display: inline-block;
-  margin-left: 5rem;
-  font-size: 40px
-}
-sup {
-  background-color: rgb(31, 23, 145);
-  /* vertical-align: text-top; */
-  color: #FAFBFF;
-  font-size: 20px;
-  padding-left: -4px;
-}
-
-
 
 
 

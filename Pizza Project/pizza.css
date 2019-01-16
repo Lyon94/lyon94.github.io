@@ -44,6 +44,10 @@ span {
   color: #FFFFFF;
 }
 
+nav ul :nth-child(3) {
+  margin-left: -2.5rem;
+}
+
 nav ul li a {
   text-decoration: none;
   padding: 30px;

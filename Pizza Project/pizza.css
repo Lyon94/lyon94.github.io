@@ -15,15 +15,33 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 0 70px;
+  margin-right: 3rem;
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
 }
 
 nav ul .first-child {
   text-align: right;
   color: #FF4D00;
+}
+
+nav ul :nth-child(2) {
+  position: relative;
+}
+
+span {
+  position: absolute;
+  top: -14px;
+  right: 37px;
+  font-size: .7em;
+  background: #0F86EA;
+  color: white;
+  padding: 2px 9px;
+  text-align: center;
+  border-radius: 0.5px;
+  box-shadow: 0 0 1px #333;
+  color: #FFFFFF;
 }
 
 nav ul li a {
@@ -47,6 +65,7 @@ header h1 {
   font: normal bold 55px 'Playfair Display', serif;
   line-height: 74px;
 }
+
 header h5 {
   font-size: 22px;
   line-height: 27px;
@@ -130,7 +149,8 @@ section .best {
 .food-time .wrap {
   height: 57vh;
   width: 20vw;
-  background: #FFFFFF;;
+  background: #FFFFFF;
+  ;
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   margin: 0rem 1rem;
@@ -255,15 +275,3 @@ footer .operations :last-child {
   font-size: 18px;
   color: #4E4E4E;
 }
-
-
-
-
-
-
-
-
-
-
-
-

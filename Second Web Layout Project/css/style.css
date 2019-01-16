@@ -70,10 +70,10 @@ nav .icon a {
 
 header .banner {
   color: #ffffff;
-  /* height: 300px; */
+
   display: flex;
   justify-content: space-between;
-  /* padding: 8vh 5vw 2vh; */
+ 
   margin: 6rem 0 0 3rem;
 }
 
@@ -117,7 +117,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   position: relative;
-  margin: -15vh auto 1rem;
+  margin: -15vh auto 0rem;
 }
 section .big {
   background-color: #fff;
@@ -152,7 +152,7 @@ section .two .big-pic .play-icon2 {
   width: 30px;
   position: absolute;
   left: 189vh;
-  top: 65.8vw;
+  top: 67vw;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 section .text {

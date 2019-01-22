@@ -1,0 +1,251 @@
+:root {
+  --bg-color1: #fff;
+  --bg-color: rgb(194, 189, 189);
+  --general-color: #000000;
+  --submit-color: #dbf306;
+  --foot-color: #424242;
+}
+
+#pricing {
+  --bg-color: #817777;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: 'Bitter', serif;
+}
+
+/* for all icon tags */
+img {
+  width: 6vw;
+}
+
+header {
+  background-color: var(--bg-color1);
+  height: 80px;
+  min-width: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding-left: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
+header .logo {
+  display: flex;
+}
+
+header .logo .pep {
+  display: flex;
+  margin: auto 1rem;
+  font-size: 29px;
+  line-height: 20px;
+  font-weight: 900;
+}
+
+
+header #nav-bar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+#nav-bar ul a {
+  color: var(--general-color);
+  text-decoration: none;
+  padding-right: 5rem;
+  line-height: 19px;
+  font-size: 20px;
+}
+
+.main-container {
+  width: 80%;
+  margin-left: 15vw;
+  margin-top: 20vh;
+  position: absolute;
+  z-index: 1;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 29px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+main #form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form input[type="email"] {
+  height: 7vh;
+  width: 28vw;
+  margin: 1rem auto;
+  padding-left: 2rem;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+
+#form input[type="submit"] {
+  height: 7vh;
+  width: 15vw;
+  margin: 0rem auto;
+  background-color: var(--submit-color);
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+#features>div {
+  height: 100px;
+  margin: 2rem;
+  display: flex;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+}
+.text :first-child {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.text :last-child {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500; 
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricing>div {
+  border: 2px red solid;
+  margin: 1rem;
+  height: auto;
+  width: calc(100%/3);
+}
+
+#pricing>div :first-child {
+  height: 40px;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+#pricing>div p {
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+#pricing>div :nth-child(2) {
+  padding: 1.3rem 0 1rem;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+#pricing>div :last-child {
+  margin: 2rem 0 1rem;
+  margin-left: 6rem;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: normal;
+  background: var(--submit-color);
+  height: 7vh;
+  width: 10vw;
+}
+
+footer {
+  padding: 1rem 2rem;
+  width: 100%;
+  background: var(--foot-color);
+}
+
+footer>div {
+  padding-block-end: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .privy p {
+  padding-left: 2rem;
+  font-size: 18px;
+  color: var(--bg-color1);
+  font-weight: normal;
+}
+footer .copy {
+  font-size: 18px;
+  color: var(--bg-color1);
+}
+
+
+/* media queries */
+
+@media all and (max-width: 800px)  {
+  .main-container {
+   width: 100%;
+   margin-left: 0;
+   background-color: green;
+  } 
+  main h1 {
+    padding: 2rem 0;
+  }
+ 
+ main #form input[type="email"] {
+   padding-left: 0;
+ }
+ main #form input[type="submit"] {
+   font-size: 18px;
+   line-height: 16px;
+   width: auto;
+ }
+ #pricing div input[type="submit"]  {
+   width: auto;
+ }
+ }

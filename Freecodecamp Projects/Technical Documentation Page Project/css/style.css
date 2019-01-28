@@ -1,0 +1,157 @@
+:root {
+  --bg-color1: #fff;
+  --general-color: #000000;
+  --submit-color: #f30639;
+  --foot-color: #272626;
+  --text-color: #212421;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Bitter', serif;
+  min-width: 300px;
+  line-height: 1.5;
+}
+
+.container {
+  min-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px auto 50px;
+}
+
+.container .first {
+  grid-column: 4/-1;
+  background-color: #fff;
+  color: var(--foot-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second {
+  grid-column: 1/4;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  min-width: 300px;
+  height: 100vh;
+  border-right: 2px solid var(--text-color);
+}
+
+#navbar header {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0 2rem;
+  text-decoration: underline;
+}
+
+#navbar ul {
+  text-align: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul> :first-child {
+  border-top: 1px solid #000;
+}
+
+#navbar ul li {
+  padding: 2rem 0;
+  border-bottom: 1px solid #000;
+}
+
+#navbar ul li a {
+  color: var(--foot-color);
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.third {
+  grid-column: 4/-1;
+  margin-left: 2rem;
+}
+
+.main-section header {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.main-section article {
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+pre {
+  border: 4px solid var(--submit-color);
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.images {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+img {
+  padding-left: 2rem;
+}
+
+.fourth {
+  grid-column: 4/-1;
+  background-color: var(--general-color);
+  color: var(--bg-color1);
+  text-align: center;
+}
+
+.my-work {
+  width: 90em;
+  white-space: nowrap;
+  overflow: hidden;
+
+  -webkit-animation: type 3s steps(50, end) infinite;
+  animation: type 8s steps(50, end) infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+/* media queries */
+@media all and (max-width: 800px) {
+  body {
+    background-color: #fff;
+  }
+
+  .container .first {
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 7rem;
+  }
+
+}

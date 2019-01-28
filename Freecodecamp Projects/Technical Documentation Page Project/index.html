@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fourth FCC Project(Build a Technical Documentation Page)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="first">
+      <h1>FLEXBOX DOCUMENTATION</h1>
+    </div>
+    <div class="second">
+      <nav id="navbar">
+        <header>Table of Contents</header>
+        <ul>
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#Flexbox_Properties" class="nav-link">Flexbox Properties</a></li>
+          <li><a href="#Flexbox_Axes" class="nav-link">Flexbox Axes</a></li>
+          <li><a href="#Flexbox_Usage" class="nav-link">Flexbox Usage</a></li>
+          <li><a href="#Status_in_Browsers" class="nav-link">Status in Browsers</a></li>
+          <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="third">
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>The Flexible Box Module, usually referred to as flexbox, is a module of CSS that defines a CSS box model
+              optimized for user interface design, and the layout of items in one dimension. It was also designed as a
+              method that could offer space distribution between items in an interface and powerful alignment
+              capabilities.</p>
+            <p> When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with
+              layout
+              in one dimension at a time — either as a row or as a column. This can be contrasted with the
+              two-dimensional
+              model of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a>,
+              which controls columns and rows together.</p>
+            <p><strong>Simply put; CSS Flexbox is a set of css properties that enables the creation of one dimensional
+                layout. </strong></p>
+          </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Flexbox_Properties">
+          <header>Flexbox Properties</header>
+          <article>
+            <ul>
+              <li><strong>The flex container</strong>
+                <p>This is the containing element that which contains items that are meant to be structured within the
+                  layout. An area of a document laid out using flexbox is called a flex container. To create a flex
+                  container, we set the value of the area's container's display property to flex or inline-flex. As
+                  soon as
+                  we do this the direct children of that container become <strong>flex items</strong>. The flex items
+                  are
+                  the elements containered within the flex container. Look at this like a mother to children
+                  relationship;
+                  The flex container is the mother while the flex items are the children.</p>
+              </li>
+              <li><strong>The flex direction</strong>
+                <p>The flex-direction is simply the arrangements of the flex items within the flex container along the
+                  horizontal or vertical plane. The flex direction has four values that can be used for arrangement of
+                  the
+                  flex items; row, column, row-reverse, column-reverse. Assuming a direction starting from the left;
+                  the
+                  row value represents the horizontal axis oriented from the left to the right, and row-reverse from
+                  the
+                  right to the left. Similar principle applies to the column and column-reverse values.</p>
+              </li>
+              <li><strong>The flex wrap</strong>
+                <p>The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto
+                  multiple
+                  lines. If wrapping is allowed, it sets the direction that lines are stacked. The acceptable values
+                  for
+                  flex wrap are; wrap, nowrap, wrap-reverse.</p>
+                <p>
+                  <ul>
+                    <li> <em>nowrap</em>:
+                      The flex items are laid out in a single line which may cause the flex container to overflow. This
+                      is
+                      the default value.</li>
+                    <li><em>wrap</em>:
+                      The flex items break into multiple lines.</li>
+                    <li><em>wrap-reverse</em>:
+                      Behaves the same as wrap, however the flex items are arranged in reverse order.</li>
+                  </ul>
+                </p>
+              </li>
+              <li><strong>The flex flow</strong>
+                <p>The flex-flow CSS property is a shorthand property for flex-direction and flex-wrap properties. It
+                  is
+                  pertinent to start with the direction value followed by the wrap value. Some examples of its values
+                  are;
+                  row wrap, row-reverse nowrap, column-reverse wrap-reverse, etc.</p>
+              </li>
+              <li><strong>Order</strong>
+                <p>The order CSS property sets the order to lay out an item in a flex or grid container. Items in a
+                  container are sorted by ascending order value and then by their source code order. Note that negative
+                  values are allowed.</p>
+              </li>
+              <li><strong>The flex</strong>
+                <p>To have more control over flex items, we can target them directly using the "flex" property. It is a
+                  shorthand way of expressing three properties that are used in controlling the ratios of distribution
+                  of
+                  the available space among flex items on the main axis:
+                  <ul>
+                    <li>flex-grow</li>
+                    <li>flex-shrink</li>
+                    <li>flex-basis</li>
+                  </ul> The flex shorthand allows you to set the three values in this order — flex-grow, flex-shrink,
+                  flex-basis.</p>
+                <p>There are shorthand values for flex;
+                  <ul>
+                    <li>flex: initial. Setting flex: initial resets the item to the initial values of Flexbox. This is
+                      the
+                      same as flex: 0 1 auto. </li>
+                    <li>flex: auto. Using flex: auto is the same as using flex: 1 1 auto; everything is as with
+                      flex:initial but in this case the items can grow and fill the container as well as shrink if
+                      required.</li>
+                    <li>flex: none. Using flex: none will create fully inflexible flex items. It is as if you wrote
+                      flex: 0
+                      0 auto. The items cannot grow or shrink but will be laid out using flexbox with a flex-basis of
+                      auto.</li>
+                  </ul>
+                </p>
+                <p>The shorthand you often see in tutorials is flex: 1 or flex: 2 and so on. This is as if you used
+                  flex: 1
+                  1 0. The items can grow and shrink from a flex-basis of 0.
+                  <pre><code>
+                              .box {
+                                display: flex;
+                              }
+                        
+                              .one {
+                                flex: 1;
+                              }
+                        
+                              .two {
+                                flex: 2;
+                              }
+                        
+                              .three {
+                                flex: 1;
+                              }
+                            </code></pre>
+                </p>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+
+        <section class="main-section" id="Flexbox_Axes">
+          <header>Flexbox Axes</header>
+          <article>
+            <p>The arrangement of flex items within the container works on the principle of its axes. There are two
+              axes in
+              css flexbox; <em>the main axis and the cross axis.</em> The main axis is the principal direction of the
+              flex
+              items while the cross axis runs perpendicular to the main axis.</p>
+            <ul>
+              <li> <strong>The main axis</strong>: The main axis is defined by flex-direction. If row or row-reverse is
+                used,
+                the
+                main axis will run along the row in the inline direction. If column or column-reverse is used, the main
+                axis will run from the top of the page to the bottom — in the block direction. The arrangement of items
+                along the main axis can be achieved using the justify-content property. Its acceptable values are
+                flex-start, flex-end, center, space-between, space-around, space-evenly.
+              </li>
+              <li><strong>The cross axis</strong>: The cross axis runs perpendicular to the main axis, therefore if the
+                flex-direction (main axis) is set to row or row-reverse the cross axis runs down the column and vice
+                versa.
+                The arrangement of items along the cross axis can be achieved using the align-items property. Its
+                acceptable values are flex-start, flex-end, center, stretch and baseline.
+              </li>
+            </ul>
+            <div class="images">
+              <img src="images/row.png" alt="row direction"> <img src="images/column.png" alt="column direction">
+            </div>
+            Understanding which axis is which is important when we start to look at aligning and justifying flex items;
+            flexbox features properties that align and justify content along one axis or the other.
+          </article>
+        </section>
+        <hr>
+
+        <section class="main-section" id="Flexbox_Usage">
+          <header>Flexbox Usage</header>
+          <article>
+            <p>Why use flexbox?? In a perfect world of browser support, the reason you'd choose to use flexbox is
+              because
+              you want to lay a collection of items out in one direction or another. As you lay out your items you want
+              to
+              control the dimensions of the items in that one dimension, or control the spacing between items. These
+              are
+              the uses that flexbox was designed for. </p>
+            <ul>
+              <li>Navigation: Alignment of items within the navigation bar is easier done with flexbox. A typical
+                example;
+                After listing the flex items within the flex container, align the horizontally using the
+                justify-content
+                and align-items values.
+                <pre><code>
+                    nav ul {
+                      display: flex;
+                      justify-content: space-between;
+                    }
+                 </code></pre>
+                <p>If I wanted all of my navigation items to have equal width, then I might use flex: auto, which is
+                  the
+                  shorthand for flex: 1 1 auto — all items grow and shrink from a flex-basis of auto. This would mean
+                  that
+                  the longer item would have more space.</p>
+                <pre><code>
+                          nav ul {
+                            display: flex;
+                          }
+                          
+                          nav li {
+                            flex: auto ;
+                          }              
+                      </code></pre>
+
+              </li>
+              <li>Centering Items: In the past, alignment of items vertically used to be a tedious task, it has been
+                made
+                straightforward using the alignment properties in flexbox, as the following example shows.
+                <pre><code>
+                            .box {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                            }
+                            
+                            .box div {
+                              width: 100px;
+                              height: 100px;
+                            }
+                        </code></pre>
+              </li>
+              <li>Card layout pushing footer down: Whether you use flexbox or CSS Grid to lay out a list of card
+                components, these layout methods only work on direct children of the flex or grid component. This means
+                that if you have variable amounts of content, the card will stretch to the height of the grid area or
+                flex
+                container. Any content inside uses regular block layout, meaning that on a card with less content the
+                footer will rise up to the bottom of the content rather than stick to the bottom of the card. Flexbox
+                can
+                solve this. We make the card a flex container, with flex-direction: column. We then set the content
+                area to
+                flex: 1, which is the shorthand for flex: 1 1 0 — the item can grow and shrink from a flex basis of 0.
+                As
+                this is the only item that can grow, it takes up all available space in the flex container and pushes
+                the
+                footer to the bottom. If you remove the flex property from the live example you will see how the footer
+                then moves up to sit directly under the content.
+                <pre><code>
+              
+                .card {
+                  display: flex;
+                  flex-direction: column;
+              }
+              
+              .card .content {
+                  flex: 1 1 auto;
+              }
+            </code></pre>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Status_in_Browsers">
+          <header>Status in Browsers</header>
+          <article>
+            <p>Browser support for flexbox is excellent, and the majority of browsers do not need a prefix at this
+              point.
+              Safari was the last of the major browsers to remove prefixes, with the release of Safari 9 in 2015. The
+              two
+              browsers you should still keep in mind for cross-browser compatibility are:
+              <ul>
+                <li>Internet Explorer 10, which implemented the display: flexbox version of the specification with the
+                  -ms-
+                  prefix.</li>
+                <li>UC Browser, which still supports the 2009 display: box version only with the -webkit- prefix.</li>
+              </ul>Note also that Internet Explorer 11 supports the modern display: flex specification however it has a
+              number of bugs in the implementation.
+            </p>
+          </article>
+        </section>
+        <hr>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <article>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">MDN</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-TRICKS</a></li>
+          </article>
+        </section>
+      </main>
+    </div>
+    <div class="fourth">
+      <footer>
+        <p style="color: rgb(192, 27, 27);"> &copy; 2018 Abdullateef Abass.com. All Rights Reserved.</p>
+        <p class="my-work">Designed by <a href="https://twitter.com/hargbolahan6" style="color: rgb(161, 20, 20);">Lyon
+            G_Bass</a></p>
+      </footer>
+    </div>
+  </div>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+
+
+
+
+.screen4 .glass-dot {
+  margin-top: 0.5rem;
+}
+.frame4-cave {
+  position: relative;
+  display: inline-block;
+}
+mainp {
+  position: absolute;
+  top: 300px;
+  right: 20px;
+  background: rgb(187, 162, 162);
+  color: var(--bg-color1);
+  height: 25px;
+  width: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+main .friend-tag img {
+  position: absolute;
+  top: 45vh;
+  left: 1vw;
+}
+/* not used */
+.friend-tag p::after {
+  position: absolute;
+  top: 15vh;
+  right: 21vw;
+  content: "tag"; 
+  color: black;
+  /* width: 64px; */
+}
+.friend-tag:hover {
+  cursor: progress;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 28vh;
+  right: 3vw;
+  margin-left: 50px;
+}
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.frame4-cave:hover .tooltiptext {
+  visibility: visible;
+}

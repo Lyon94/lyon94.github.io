@@ -1,0 +1,229 @@
+:root {
+  --bg-color1: #fff;
+  --bg-color: rgb(173, 168, 168);
+  --general-color: #000000;
+  --submit-color: #3e5cf1;
+  --foot-color: #424242;
+  --new-bg: rgb(236, 235, 235);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--general-color);
+}
+
+.frames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.frame {
+  position: relative;
+  width: 25rem;
+  height: 45rem;
+  background: #f7f7f7;
+  margin: 4rem auto;
+  overflow-y: auto;
+}
+
+.frame:before {
+  content: '';
+  width: 27rem;
+  height: 47rem;
+  left: -1rem;
+  top: -1rem;
+  opacity: 0.7;
+  z-index: -1;
+  position: absolute;
+  border-radius: 1rem;
+  background: slategrey;
+}
+.frame .screen1{
+  /* background-color: rgb(34, 32, 32); */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+header {
+  grid-column: 1/-1;
+  background-color: var(--new-bg);
+  border-bottom: 1.5px solid var(--bg-color);
+}
+header .first_head {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.3rem;
+}
+.first_head p {
+  font-weight: bolder;
+  font-size: 15px;
+  margin-left: -4rem;
+}
+.wifi span {
+  font-weight: 600;
+
+}
+.wifi .wify {
+  width: 2.5vh;
+}
+.first_head .battery {
+  width: 5vh;
+}
+header .second_head {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 0 0.7rem;
+}
+.second_head p {
+  margin-left: 1.5rem;
+  font-weight: 900;
+  font-size: 20px;
+}
+.profile {
+  grid-column: 1/-1;
+  /* background-color: rgb(45, 32, 158); */
+  margin: 0.5rem 0.5rem 1rem;
+}
+.profile .pic_post {
+   height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .profile_pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px rgb(194, 57, 57) solid;
+  object-fit: cover;
+  padding: 0.1rem;
+}
+.profile .post_follow {
+  margin-left: 1rem;
+} 
+.pic_post .post_number {
+  display: flex;
+  justify-content: space-around;
+}
+.post_number p {
+  color: var(--bg-color);
+}
+.post_number .number {
+font-weight: 900;
+font-size: 24px;
+color: var(--general-color);
+}
+.pic_post .follow_down input{
+  height: 33px;
+  width: 210px;
+  border: none;
+  border-radius: 5px;
+  color: var(--bg-color1);
+  background-color: var(--submit-color);
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+.pic_post .follow_down .right_arrow {
+  width: 5.5vh;
+  margin-left: 0.5rem
+}
+.follow_down {
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+.following :first-child {
+  text-align: center;
+  /* width: 1px; */
+}
+.profile .bio {
+  margin-top: 0.2rem;
+  line-height: 1.5rem;
+}
+.bio .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.bio a {
+  text-decoration: none;
+}
+.stories {
+  grid-column: 1/-1;
+  /* background-color: rgb(13, 145, 83); */
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.7rem;
+}
+.stories .igtv {
+  display: flex;
+  /* align-items: center; */
+  margin-right: 0.5rem;
+}
+#IGTV {
+  padding-right: 0.5rem;
+}
+.igtv>hr {
+  height: 9vh;
+ margin-top: 1rem;
+  border: 1px solid var(--bg-color);
+}
+.stories img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px var(--bg-color) solid;
+  padding: 0.1rem;
+  object-fit: cover;
+}
+.stories p {
+  font-weight: 600;
+  text-align: center;
+}
+#baseline{
+  border: 0.1px solid var(--bg-color);
+  width: 27vw;
+  margin: 0 auto;
+}
+.navigation{
+  /* grid-column: 1/-1; */
+  height: 50px;
+  margin: 0.5rem 0;
+  /* background-color: rgb(188, 201, 10); */
+  display: flex;
+  justify-content: space-around;
+}
+.navigation>img {
+  width: 6vh;
+
+}
+
+.image_grid img {
+  height: 120px;
+  width: 125.5px;
+  object-fit: cover;
+}
+footer {
+  grid-column: 1/-1;
+  background-color: var(--new-bg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+footer img {
+  width: 2vw;
+}
+/* general icon size */
+img {
+  width: 3vh;
+}

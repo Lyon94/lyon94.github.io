@@ -1,0 +1,35 @@
+
+
+
+.frame .screen3 {
+background-color: rgb(182, 45, 45);
+}
+header .message {
+  margin-left: 0.5rem;
+}
+.screen3 .glass-dot {
+  margin-top: 0.5rem;
+}
+ main {
+  margin-top: -0.5rem;
+}
+.Plus {
+  margin: 0.5rem 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+ .heart .three-icons img {
+margin-right: 1rem;
+
+}
+.heart img {
+  width: 1.5vw;
+}
+.small {
+  padding-bottom: 1.5rem;
+}
+ .Add {
+  border-top: 1.5px solid var(--bg-color);
+}

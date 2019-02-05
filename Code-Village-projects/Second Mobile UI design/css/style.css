@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:700');
+
+:root {
+  --bg-color1: #fff;
+  --bg-color: rgb(210, 219, 224);
+  --general-color: #000000;
+  --submit-color: #3e5cf1;
+  --foot-color: #344955;
+  --new-bg: rgb(213, 224, 53);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.frames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.frame {
+  position: relative;
+  width: 25rem;
+  height: 45rem;
+  background: #c0bcbc;
+  margin: 4rem auto;
+  overflow-y: auto;
+}
+
+
+.frame:before {
+  content: '';
+  width: 27rem;
+  height: 47rem;
+  left: -1rem;
+  top: -1rem;
+  opacity: 0.7;
+  z-index: -1;
+  position: absolute;
+  border-radius: 1rem;
+  background: rgb(84, 97, 109);
+}
+
+nav {
+  height: 25px;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.little-icon {
+  width: 3.5vh;
+  padding-right: 0.6rem;
+}
+
+main {
+  background-color: var(--bg-color1);
+  padding: 0 1rem;
+  margin: 0.2rem 0.2rem;
+}
+
+.bonjour {
+  /* height: 150px; */
+  margin-bottom: 1rem;
+}
+
+.bon-image {
+  /* height: 150px; */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heavy-text {
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #312f2f;
+  letter-spacing: 1.5px;
+}
+
+.average-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+  font-family: 'Work Sans', sans-serif;
+  color: #312f2f;
+  padding: 0.5rem 0 1rem;
+}
+
+.visible {
+  font-size: 1.7rem;
+}
+
+.bon-image>a {
+  padding-top: 1rem;
+  align-self: flex-start;
+}
+
+.sandra-image {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+p {
+  color: rgb(120, 139, 146);
+}
+
+.middle-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.light-text {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.time-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.round-image {
+  margin-top: -1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 12vw);
+  grid-gap: 0.3rem;
+}
+
+.images>img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gym {
+  grid-column: 1/span 8;
+}
+
+.neymar {
+  grid-column: 9/-1;
+}
+
+.paris {
+  grid-column: 1/span 4;
+}
+
+.lady1 {
+  grid-column: 5/span 4;
+}
+
+.robocop {
+  grid-column: 9/span 4;
+}
+
+.lady2 {
+  grid-column: 1/-1;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  height: 60px;
+  background-color: var(--foot-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.mid-icon {
+  width: 2.5vw;
+}
+
+.midy-icon {
+  width: 1.5vw;
+}
+
+.half-circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: var(--new-bg);
+  position: absolute;
+  top: -30px;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-scroll :last-child {
+  padding-left: 0.5rem;
+}
+
+.star-dot :first-child {
+  padding-right: 1rem;
+}
+
+/* frame2 */
+.package .go-umbrella {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.go-umbrella img {
+  /* margin-top: 0rem; */
+}
+
+.m-icon {
+  width: 2vw;
+}
+
+.cucu {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-bottom: 1rem;
+}
+
+.cucu p {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.errand p {
+  padding-left: 0;
+}
+
+.brown {
+  color: rgb(184, 174, 174);
+}
+
+.browny {
+  color: rgb(102, 95, 95);
+}
+
+.flex-image {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.flex-image>img {
+  height: 12vw;
+  object-fit: cover;
+}
+
+.flex-image :first-child {
+  width: 14vw;
+  padding-right: 5px;
+}
+
+.flex-image :nth-child(2) {
+  width: 8vw;
+  padding-right: 5px;
+}
+
+.flex-image :last-child {
+  width: 4.5vw;
+}
+.star-doty :first-child {
+  padding-right: 0.5rem;
+}
+
+/* screen 3 */
+.parrot {
+  display: flex;
+}
+.parrot>img {
+  width: 8vw;
+  height: 10vw;
+  padding-right: 1.5rem;
+}
+.parrot-text {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.caribbean .average-text {
+  padding-bottom: 0.5rem;
+}
+/* screen 4 */
+.screen4 .bonjour {
+  margin-bottom: 0rem;
+}
+.friends p {
+  padding-bottom: 1.5rem;
+}
+.friends :last-child {
+  padding-bottom: 0rem;
+}
+.screen4 {
+  /* overflow: hidden; */
+  /* margin: 0 auto; */
+}
+/* I really don't understand the extra space at the bottom of screen. What could cause that effect? */

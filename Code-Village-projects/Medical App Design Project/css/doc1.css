@@ -1,0 +1,95 @@
+
+.documentation>.blue-line {
+  position: absolute;
+  top: 61.2%;
+  left: 18.4%;
+  height: 132.82px;
+}
+.documentation-details .white-line {
+  top: 50.9%;
+  right: 2.5%;
+  height: 17vh;
+  opacity: 0.6;
+}
+.details-heading {
+  width: 886px;
+height: 70px;
+background: #FFFFFF;
+border-radius: 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0rem 0rem 1rem 2rem;
+} 
+.details-heading p, .details-frozen, .seventeen span {
+  font-size: 17px;
+color: #9AA6CE;
+}
+.details-heading img, .details-frozen img {
+  cursor: pointer;
+}
+.head {
+background: none;
+margin-bottom: 0.5rem;
+}
+.head>p {
+  color: #A9B3D2;
+  font-size: 14.7px;
+}
+
+.head .title {
+  margin-right: 2.7rem;
+}
+.head .date {
+  /* margin-left: 2rem; */
+  margin-right: 10.1rem;
+}
+.box {
+  width: 23px;
+  height: 23px;
+  opacity: 0.3;
+  border: 2.3px solid #A9B3D2;
+  box-sizing: border-box;
+  border-radius: 4.6px;
+  margin-left: 2rem;
+}
+.type {
+  margin: 0 6rem 0 3.5rem;
+}
+.date {
+  margin: 0 11rem 0 11rem;
+}
+.duration {
+  margin: 0 5rem 0 -4rem;
+}
+.details-heading img, .details-frozen img {
+  margin-left: 2rem;
+  width: 1.2vw;
+}
+ .blueline {
+  width: 5.63px;
+height: 70.71px;
+border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+background: #43ACFF;
+}
+.top .duration {
+  margin-right: 3.7rem;
+}
+.frozen .date {
+  margin-left: 5rem;
+}
+.morfix .date {
+  margin-left: 9rem;
+}
+.morfix .duration {
+  margin-left: -3.5rem;
+  margin-right: 4.7rem;
+}
+.dropped .duration {
+  margin-right: 3.8rem;
+}
+.hit .date {
+  margin-left: 9.5rem;
+  margin-right: 11.3rem;
+}

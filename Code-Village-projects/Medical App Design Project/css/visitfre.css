@@ -1,0 +1,139 @@
+
+
+.calendar .blue-line {
+  position: absolute;
+  top: 75.2%;
+  left: 32%;
+  height: 85.82px;
+}
+
+.calendar-details {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding: 1rem;
+  width: 865px;
+height: 567px;
+background: #FFFFFF;
+border-radius: 9px;
+}
+.january2019 {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* border-bottom: 1px solid #000; */
+}
+.january {
+  display: flex;
+  /* align-items: center; */
+}
+.january span {
+  font-size: 17px;
+color: #9AA6CE;
+padding-right: 1.1rem;
+}
+.direction {
+  margin-top: 0.15rem;
+}
+.direction :first-child {
+  padding-right: 0.4rem;
+}
+.twenty19 span {
+  font-size: 17px;
+color: #9AA6CE;
+}
+.twenty19 img {
+  /* width: 2vw; */
+  margin-bottom: 0.279rem;
+  padding-left: 0.5rem;
+}
+
+.calendar-grid {
+  margin-top: 1.2rem;
+  margin-left: -1rem;
+  margin-right: -1.18rem;
+  /* padding-left: 1rem; */
+  /* background-color: rgb(226, 39, 39); */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-rows: auto, 300px; */
+  /* grid-template-rows: auto, repeat(3, 100px); */
+  /* margin-left: 0; */
+}
+.days {
+  /* margin-left: -1rem; */
+  /* padding-left: 2rem; */
+  /* margin-left: 0; */
+  /* background-color: rgb(138, 26, 26); */
+  border: 0.05px solid rgb(243, 235, 235);
+  /* border: none; */
+  border-left: none;
+  /* border-right: none; */
+  padding-top: 0.85rem;
+  padding-bottom: 3rem;
+  /* padding-left: 0; */
+  /* color: #000000; */
+  /* font-size: 1.8rem; */
+}
+.calendar-grid .week {
+  background-color: #FFFFFF;
+  border: none;
+  padding: 0.85rem;
+  padding-left: 1rem;
+font-size: 14px;
+/* text-align: center; */
+color: #ADAEB4;
+}
+.calendar-grid .opacity {
+  opacity: 0.5;
+  /* border: none; */
+  /* color: rgb(224, 224, 231); */
+}
+.numbers {
+  /* margin-left: -2rem; */
+  font-size: 16px;
+  padding-left: 1rem;
+color: #9AA6CE;
+}
+.opacity31 {
+  /* opacity: 0.4; */
+  color: rgb(218, 221, 233);
+}
+.three {
+  padding-bottom: 1.59rem;
+}
+.test {
+  width: 71px;
+height: 22px;
+background: #EB5757;
+opacity: 0.6;
+border-radius: 5px;
+font-size: 13px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+border: 0.2px solid #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+/* margin-bottom: 0; */
+/* margin-top: 1.5rem; */
+margin-bottom: -2rem;
+}
+.uzi {
+  width: 32px;
+background: #F2994A;
+letter-spacing: 0.03em;
+}
+.result {
+  width: 69px;
+}
+.dentist {
+  width: 56px;
+  background: #27AE60;
+}
+.calendar-grid .last {
+  border-bottom: none;
+}
+
+.blue :nth-child(5) {
+  padding-bottom: 71.55vh;
+}

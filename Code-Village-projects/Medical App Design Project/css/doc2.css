@@ -1,0 +1,77 @@
+
+
+.documentation2 .blue-line {
+  position: absolute;
+  top: 61.2%;
+  left: 18.4%;
+  height: 132.82px;
+}
+
+.pdf-details {
+  width: 886px;
+  height: 268px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-left: 2rem;
+  display: flex;
+  margin-bottom: 1rem;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* margin: 0rem 0rem 1rem 2rem; */
+}
+.pdf-details .blueline {
+  width: 5.7px;
+height: 268px;
+}
+.details-frozen {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0 2rem 0;
+}
+.title2 {
+  margin-right: 4.6rem;
+}
+.date2 {
+  margin-right: 7.1rem;
+}
+.duration2 {
+  margin-right: 5rem;
+}
+.seventeen {
+  margin-left: 2rem;
+  /* margin-top: 2rem; */
+}
+.seventeen>span {
+  margin-left: 3.5rem;
+}
+.signature {
+  padding-bottom: 0.6rem;
+}
+.pdf-doc {
+  display: flex;
+}
+.blue-pdf {
+width: auto;
+height: 41px;
+background: #43ACFF;
+opacity: 0.9;
+box-shadow: 0px 2.25087px 6.7526px rgba(77, 77, 86, 0.05);
+border-radius: 5px;
+margin-top: 1rem;
+margin-right: 1.3rem;
+padding: 0.7rem;
+cursor: pointer;
+}
+.blue-pdf span {
+  color: #FFFFFF;
+}
+.thick-pdf {
+  font-family: SF Pro Display;
+font-size: 14px;
+font-weight: 600;
+padding-right: 0.8rem;
+letter-spacing: 0.02em;
+}
+.green .blueline {
+  background: #33CDBA;
+}

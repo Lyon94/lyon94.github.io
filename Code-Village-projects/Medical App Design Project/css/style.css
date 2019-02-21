@@ -1,0 +1,441 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14.7px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: 70px auto;
+
+}
+
+nav {
+ border: 1px solid #E5E5E5;;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: #FFFFFF;
+  /* margin-bottom: 0; */
+}
+.line-search {
+  display: flex;
+  /* align-items: center; */
+margin-left: -10.5rem;
+}
+.line-search hr {
+  height: 2.5rem;
+  width: 2.5px;
+background: #A9B3D2;
+opacity: 0.2;
+}
+.search {
+  display: flex;
+  padding-left: 1.5rem;
+}
+.search img {
+  cursor: pointer;
+  padding-right: 0.5rem;
+}
+.search span  {
+  padding-top: 0.62rem;
+  font-family: Helvetica Neue;
+line-height: 17px;
+font-size: 1.3rem;
+
+color: #A9B3D2;
+
+opacity: 0.7;
+}
+
+
+.create-obama {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.plus-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 197px;
+height: 42px;
+background: linear-gradient(101.13deg, #F46B45 0%, #EEA849 100%);
+border-radius: 4.5px;
+}
+.plus-create span {
+  line-height: 40px;
+font-size: 1rem;
+padding-left: 0.5rem;
+color: #FFFFFF;
+}
+.obama-john {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.obama-john .obama {
+  height: 6vh;
+}
+.obama-john img {
+  cursor: pointer;
+}
+.obama-john p {
+  padding: 0 0.4rem 0 0.7rem;
+  line-height: 40px;
+text-align: right;
+font-size: 1.3rem;
+color: #9AA6CE;
+}
+
+.blue {
+  /* margin: 0; */
+  position: relative;
+  background: linear-gradient(180deg, #0072FF 0%, #00C6FF  100%);
+    grid-column: span 1; 
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+.blue img {
+  padding: 35% 0;
+  cursor: pointer;
+}
+.blue :nth-child(2) {
+  padding-top: 50%;
+}
+.blue :nth-child(5) {
+  padding-bottom: 68vh;
+}
+.blue :nth-child(6) {   
+  /* justify-content: end; what flex property can solely control this along the cross axis. */
+}
+.blue-line {
+  position: absolute;
+  top: 11%;
+  left: 0%;
+  /* border-radius: 15%; */
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 3.5px;
+  height: 72.75px;
+  background: #2BE1CB;
+ cursor: pointer;
+}
+.white {
+  background-color: #fff;
+  grid-column: span 4;
+  position: relative;
+}
+.white-line {
+  position: absolute;
+  top: 34%;
+  right: 4%;
+  border-radius: 16px;
+  width: 0.2vw;
+  height: 22vh;
+  background: #A9B3D2;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.patient-list {
+  display: flex;
+  flex-direction: column;
+  padding: 1.9rem 0 1rem  1.4rem;
+}
+.patient-recent {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.patient-highlight {
+  line-height: 40px;
+font-size: 27px;
+color: #434B65;
+font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.recent-img {
+  display: flex;
+  padding-right: 0.7rem;
+
+}
+.patient-detail {
+  line-height: 40px;
+  font-size: 14.625px;
+  /* text-align: right; */
+  color: #9AA6CE;
+  padding-right: 0.7rem;
+}
+.recent-img img {
+  cursor: pointer;
+}
+
+.j-jane {
+  padding-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.j-jane .display-picture{
+  padding-right: 1.2rem;
+  height: 4vw;
+}
+.jane-circle-up, .gas42 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.3rem;
+}
+.gas42 {
+  padding-bottom: 0;
+}
+.jane-circle-up p {
+  padding-right: 0.7rem;
+  font-weight: 600;
+font-size: 15.75px;
+color: #434B65;
+}
+.gas42 :first-child, .gas42 :nth-child(3) {
+  padding-right: 0.3rem;
+  font-size: 14.7px;
+color: #ADAEB4;
+}
+.gas42 .dot {
+  padding-right: 0.3rem;
+  margin-top: -0.5rem;
+  color: #9FAAB3;
+  font-weight: 600;
+/* opacity: 0.6; */
+/* border-radius: 2.25px; */
+}
+/* .j-jane .two { */
+  /* padding-top: 0rem; */
+/* } */
+.j-jane.two {
+  margin-top: 1.2rem;
+  margin-left: -0.7rem;
+  padding: 0 0.5rem;
+  background: #F4F7FC;
+  border-radius: 4.5px;
+  height: 5vw;
+  width: 20.2vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+
+main {
+  background: #E5E5E5;
+  grid-column: span 13;
+}
+.patient-profile {
+  height: 27.5vh;
+  /* background-color: rgb(212, 9, 9); */
+  padding: 0.7rem 2rem;
+  border-bottom: 1px solid #A9B3D2;;
+  position: relative;
+}
+.patient-profile .dp-tina img, .donald>img {
+  height: 6vw;
+}
+.patient-profile .dp-tina .jane-circle-up p {
+  padding-right: 0;
+  font-size: 29px;
+}
+.patient-profile .gas42 .dot {
+font-size: 1.5rem;
+margin-top: -0.6rem;
+}
+.about-doc {
+  padding-top: 2rem;
+display: flex;
+/* padding-left: 1rem; */
+}
+.about-doc p {
+  padding-right: 3.5rem;
+  font-size: 14.7px;
+/* text-align: center; */
+
+/*  */
+}
+.about-doc a {
+  text-decoration: none;
+  color: #43ACFF;
+  /* font-weight: 600; */
+  /* opacity: 0.9; */
+}
+.about-doc .highlighted-about-doc {
+  font-weight: 600;
+color: #008EFF;
+/* text-align: center; */
+  /* padding-bottom: 0.4rem; */
+  /* border-bottom: 4px solid rgb(15, 167, 15); */
+}
+.patient-profile .blue-line {
+  position: absolute;
+  top: 76.5%;
+  left: 5.5%;
+  width: 2.4px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  height: 79.75px;
+  background: #008EFF;
+opacity: 0.9;
+transform: rotate(-90deg);
+}
+
+.patient-contact {
+  height: 60.7vh;
+  /* background-color: #fff; */
+  padding: 2rem 1rem 0rem 2rem;
+}
+.patient-contact img {
+  cursor: pointer;
+}
+.patient-contact>p {
+  padding-bottom: 1rem;
+  font-size: 14.7px;
+  /* text-align: center; */
+  color: #ADAEB4;
+  }
+.container-contact {
+  display: flex;
+  /* padding-top: 1rem; */
+  /* margin: 1rem 2rem; */
+}
+
+.contact-detail {
+  margin-right: 2rem;
+  width: 47vw;
+  height: 50vh;
+  background: #FFFFFF;
+  border: 1.8px dashed #A9B3D2;
+box-sizing: border-box;
+border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-detail .taylor {
+  /* margin-right: 7rem; */
+}
+.blank {
+  background: none;
+}
+.blank img {
+  /* margin-top: 1vh; */
+}
+.blank p {
+color: #A9B3D2;
+padding-top: 1rem;
+}
+.donald {
+  border: none;
+}
+.donald>img {
+  /* margin-top: -1vh; */
+}
+.donald-husband :first-child {
+  
+  font-size: 23px;
+  font-weight: 600;
+  color: #434B65;
+  padding: 0.8rem 0 0.3rem;
+}
+.donald-husband :nth-child(2) {
+  /* line-height: 17px; */
+font-size: 14px;
+text-align: center;
+color: #ADAEB4;
+}
+.call-message {
+  padding: 1rem 0;
+}
+.call-message :first-child {
+  /* text-align: center; */
+  padding-right: 3rem;
+}
+.donald :last-child {
+  line-height: 20px;
+  text-align: center;
+  color: #ADAEB4;
+}
+
+
+.patient-diagnoses {
+padding-top: 2rem;
+padding-left: 2rem;
+/* display: flex; */
+}
+.patient-diagnoses>p {
+color: #ADAEB4;
+}
+
+.patient-diagnoses .anchor {
+  display: flex;
+  margin-top: 1rem;
+  /* justify-content: space-between; */
+}
+.anxiety {
+  background-color: #fff;
+  width: 47%;
+  padding-left: 1.5rem;
+  /* margin-right: 1.5rem; */
+}
+.anxiety-dots {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 0rem 0;
+  margin-top: 1rem;
+}
+.anxiety-dots p {
+  margin-top: -3vh;
+  /* line-height: 22px; */
+letter-spacing: 0.01em;
+color: #434B65;
+}
+.anxiety-dots img {
+  margin-top: -8vh;
+  cursor: pointer;
+}
+.anxiety>p {
+  line-height: 17px;
+font-size: 13.5px;
+color: #ADAEB4;
+padding: 0.8rem 0 1.1rem;
+}
+.risk {
+  margin-left: 1.4rem;
+}
+#second3dots {
+ /* margin-left: -41vh; */
+ /* margin-top: 4vh; */
+ /* background: yellow; */
+}
+
+.blueish {
+  width: 5.38px;
+height: 102.01px;
+/* left: 418.58px; */
+/* top: 312.81px; */
+margin: 2rem auto;
+background: #43ACFF;
+opacity: 0.9;
+border-top-left-radius: 11px;
+border-bottom-left-radius: 12px;
+}

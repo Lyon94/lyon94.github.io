@@ -38,11 +38,11 @@ margin-bottom: 0.5rem;
 }
 
 .head .title {
-  margin-right: 2.7rem;
+  margin-right: 2.54rem;
 }
 .head .date {
   /* margin-left: 2rem; */
-  margin-right: 10.1rem;
+  margin-right: 10.4rem;
 }
 .box {
   width: 23px;
@@ -77,19 +77,26 @@ background: #43ACFF;
   margin-right: 3.7rem;
 }
 .frozen .date {
-  margin-left: 5rem;
+  margin-left: 4.84rem;
 }
 .morfix .date {
-  margin-left: 9rem;
+  margin-left: 8.8rem;
 }
 .morfix .duration {
-  margin-left: -3.5rem;
-  margin-right: 4.7rem;
+  margin-left: -3.8rem;
+  margin-right: 4.97rem;
+}
+.dropped .date {
+  margin-left: 5.1rem;
 }
 .dropped .duration {
+  
   margin-right: 3.8rem;
 }
 .hit .date {
   margin-left: 9.5rem;
   margin-right: 11.3rem;
+}
+.documentation-details .morfix .blueline, .documentation-details .dropped .blueline, .documentation-details .last .blueline {
+  background: #33CDBA;
 }

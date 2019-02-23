@@ -25,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 1.8rem;
   background: #FFFFFF;
   /* margin-bottom: 0; */
 }
@@ -131,7 +131,7 @@ color: #9AA6CE;
   width: 3.5px;
   height: 72.75px;
   background: #2BE1CB;
- cursor: pointer;
+ /* cursor: pointer; */
 }
 .white {
   background-color: #fff;
@@ -147,7 +147,7 @@ color: #9AA6CE;
   height: 22vh;
   background: #A9B3D2;
   opacity: 0.4;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .patient-list {
   display: flex;
@@ -187,11 +187,12 @@ font-family: 'Roboto', sans-serif;
   padding-top: 1.2rem;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .j-jane .display-picture{
   padding-right: 1.2rem;
   height: 4vw;
+  cursor: pointer;
 }
 .jane-circle-up, .gas42 {
   display: flex;
@@ -258,7 +259,7 @@ main {
 }
 .patient-profile .gas42 .dot {
 font-size: 1.5rem;
-margin-top: -0.6rem;
+margin-top: -0.7rem;
 }
 .about-doc {
   padding-top: 2rem;
@@ -389,13 +390,14 @@ color: #ADAEB4;
 .patient-diagnoses .anchor {
   display: flex;
   margin-top: 1rem;
+  margin-right: 1.5rem;
   /* justify-content: space-between; */
 }
 .anxiety {
   background-color: #fff;
   width: 47%;
-  padding-left: 1.5rem;
-  /* margin-right: 1.5rem; */
+  padding-left: 1rem;
+  /* margin-right: 2rem; */
 }
 .anxiety-dots {
   display: flex;
@@ -405,12 +407,13 @@ color: #ADAEB4;
 }
 .anxiety-dots p {
   margin-top: -3vh;
-  /* line-height: 22px; */
+  line-height: 22px;
 letter-spacing: 0.01em;
 color: #434B65;
 }
 .anxiety-dots img {
-  margin-top: -8vh;
+  margin-top: -9.4vh;
+  /* padding-left: 1.3rem; */
   cursor: pointer;
 }
 .anxiety>p {
@@ -421,9 +424,13 @@ padding: 0.8rem 0 1.1rem;
 }
 .risk {
   margin-left: 1.4rem;
+  /* margin-right: -9rem;   An issue with getting the 3 dots in the desired position. */
 }
-#second3dots {
- /* margin-left: -41vh; */
+
+
+
+.anxiety #secondtdots {
+ /* margin-right: 3rem; */ 
  /* margin-top: 4vh; */
  /* background: yellow; */
 }

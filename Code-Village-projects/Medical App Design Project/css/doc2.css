@@ -1,5 +1,8 @@
 
 
+@import url('https://fonts.googleapis.com/css?family=Bitter:700');
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Rubik:700');
+
 .documentation2 .blue-line {
   position: absolute;
   top: 61.2%;
@@ -65,10 +68,11 @@ cursor: pointer;
 .blue-pdf span {
   color: #FFFFFF;
 }
-.thick-pdf {
-  font-family: SF Pro Display;
+.blue-pdf .thick-pdf {
+  font-family: 'Bitter', serif;
+  font-family: 'Rubik', sans-serif;
 font-size: 14px;
-font-weight: 600;
+font-weight: 800;
 padding-right: 0.8rem;
 letter-spacing: 0.02em;
 }

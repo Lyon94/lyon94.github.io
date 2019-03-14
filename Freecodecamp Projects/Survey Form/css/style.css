@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+body{
+  background: purple;
+  color: #000;
+  font-family: 'Raleway', Helvetica, sans-serif;
+   text-align: center;
+}
+/* heading section */
+.header {
+/*   height: 50%; */
+  width: 75%;
+  border: solid 5px;
+  border-radius: 20px;
+  margin: 20px auto;
+  background-color: white;
+}
+#title, #description {
+/*   margin: 2px; */
+  font: 3em bold;
+}
+.main{
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 25px;
+  max-width:80%;
+  padding: 5px;
+}
+ .label{
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  font: 1.5em bold
+} 
+.input{
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  padding: 5px;
+} 
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+.drop {
+  height: 40px;
+  width: 210px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+}
+ #Des, #gender, #stack, #checkers, #recom {
+   margin: 5px;
+}
+button {
+  background-color: #e67e22;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit; 
+  margin: 10px;
+  padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .label {
+    width: 100%;
+    text-align: left;
+  }
+  .input {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  #comment {
+    float: left;
+    padding: 15px;
+    display: none;
+  }
+  #finalmessage {
+    float: left;
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .input-field {
+    width: 100%;
+  }
+}
+
+ .my-work{
+  width: 90em;
+  white-space:nowrap;
+  overflow:hidden;
+  
+  -webkit-animation: type 3s steps(50, end) infinite;
+  animation: type 8s steps(50, end) infinite;
+} 
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}

@@ -1,0 +1,46 @@
+
+body {
+  font-family: 'sofia', serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 35px;
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 88px;
+  height:25px;
+}
+h4 {
+  font-family: 'Tangerine', serif;
+  font-size: 58px;
+  color: red;
+  height: 15px;
+}
+
+img {
+  max-width: 100%; 
+  display: block; 
+  /*height: auto;*/
+  margin: auto;
+  border: black solid 0px;
+  border-radius: 200px;
+}
+
+.my-work {
+  width: 90em;
+  white-space:nowrap;
+  overflow:hidden;
+  
+  -webkit-animation: type 3s steps(50, end) infinite;
+  animation: type 8s steps(50, end) infinite;
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}

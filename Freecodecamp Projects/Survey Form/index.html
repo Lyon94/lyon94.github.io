@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  
+    <div class="header">
+      <h1>WELCOME TO CODE_GHETTO.</h1>
+      <h5>The Code_Ghetto is a free collaboration platform. We connect local motivated learners with shared goals to learn, help, and build together!!!</h5>
+    </div>
+      
+    <div class="main">
+      <h3 id="title">Code_Ghetto Survey Form</h3>
+      <p id="description">Let us know how we can improve the platform.</p>
+      
+      <form id="survey-form" action="www.abass.the back-end server where I want the form will be submitted  to">
+        <div class="label"><label id="name-label" for="name">Name:</label></div>
+        <div class="input"><input type="text" id="name"class="input-field" name="name" placeholder="Enter your full name" required></div> 
+         <div class="label"><label id="email-label" for="email">Email:</label></div>
+        <div class="input"><input type="email" id="email"class="input-field" name="email" placeholder="Enter your active email" required></div>
+         <div class="label"><label id="number-label" for="age">Age:</label></div>
+        <div class="input"><input type="number" name="age" id="number"class="input-field" value="1" min="1" max="125" placeholder="Age"></div>
+        
+        <div class="label"><label>What gender are you?</label></div>
+        <div class="input"><label for="gender"><input type="radio" id="gender" name="gender" value="1">Male</label><br>
+          <label for="gender"><input type="radio" id="gender" name="gender" value="2">Female</label>
+        </div>
+        
+        <div class="label"><label id="dropdown" for="current-role">What is your current role?</label></div>
+        <div class="input"><select name="current-role" id="dropdown" class="drop">
+      <option disabled value>Select an option</option>
+      <option value="Student">Student</option>
+      <option value="Employed">Employed</option>
+      <option value="Self-employed">Self-unemployed</option>
+      <option value="Unemployed">Unemployed</option>
+      <option value="Others">Others</option>
+      </select>
+      </div>
+        <div class="label"><label>Which of these describes you best?:</label></div>
+        <div class="input"> <label for="Dev"><input type="radio" id="Des" name="levels" value="Dev">Developer</label><br>
+      <label for="Coh"><input type="radio" id="Des" name="levels" value="Coh">Enthusiast</label><br>
+      <label for="Des"><input type="radio" id="Des" name="levels" value="Des">Designer</label><br>
+      <label for="Das"><input type="radio" id="Des" name="levels" value="Das">Data Scientist</label><br>
+      <label for="Dim"><input type="radio" id="Des" name="levels" value="Dim">Digital Marketer</label></div>
+        <div class="label"><label>What tech-stacks are you familiar with using? (by familiar, We mean you can build something with this, not just that you've heard of it before;)</label></div>
+        <div class="input"><label for="stack"><input type="checkbox" id="stack" name="checkbox" value="1">HTML/CSS</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="2">React</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="3">vue</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="4">Javascript</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="5">Python</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="6">Django</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="7">Ruby on Rails</label><br>
+      <label for="stack"><input type="checkbox" id="stack" name="checkbox" value="8">Go</label><br></div>
+        
+          <div class="label"><label>How do you learn best?</label></div>
+        <div class="input"> <label for="checkers"><input type="checkbox" id="checkers" name="checkers" value="1">Meetups</label><br>
+      <label for="checkers"><input type="checkbox" id="checkers" name="checkers" value="2">Project Challenges</label><br>
+      <label for="checkers"><input type="checkbox" id="checkers" name="checkers" value="3">Help forums</label><br>
+      <label for="checkers"><input type="checkbox" id="checkers" name="checkers" value="4">Tutorial Videos</label><br>
+      <label for="checkers"><input type="checkbox" id="checkers" name="checkers" value="5">Others</label><br></div>
+        
+          <div class="label"><label>How likely is that you would recommend the platform to a friend?:</label></div>
+        <div class="input"><label for="Def"><input type="radio" id="recom" name="choices" value="Def">Definitely</label><br>
+      <label for="Maybe"><input type="radio" id="recom" name="choices" value="Maybe">Maybe</label><br>
+      <label for="Nev"><input type="radio" id="recom" name="choices" value="Nev">Never</label><br></div>
+   
+      
+      <p id="comment">Please leave your comments or suggestions below: </p>  
+      <textarea name="comment" id="comment" cols="50" rows="10" placeholder="Enter your comments here..."></textarea> 
+      <p id="finalmessage"><strong>Thank you & have a wonderful day! We'll be reaching out to you soon!  (P.s: make sure to click the submit link below)</strong></p>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+    <p style= "color: white;"> &copy; 2018 Abdullateef Abass.com. All Rights Reserved.</p>
+      <p class="my-work">Designed by <a href="https://twitter.com/hargbolahan6">Lyon94</a></p>
+
+
+</body>
+</html>

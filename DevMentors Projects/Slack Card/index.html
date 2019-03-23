@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slacker Card</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <div class="card">
+                <div class="top">
+                    <h3 class="name">Udacity Student <span class="status"></span></h3>
+                    <p class="title">Learner Extraordinaire</p>
+                </div>
+                <div class="middle">
+                    <div id="time" class="time">12:34 PM local time</div>
+                </div>
+                <div class="bottom">
+                    <button class="profile-action">View preferences</button>
+                    <button class="profile-action">Open account settings</button>
+                    <button class="profile-action">Edit your profile</button>
+                    <button class="profile-action">View your files</button>
+                    <button class="profile-action">Set yourself away</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>
+                <em>Note: the buttons have class <code>profile-action</code></em>
+            </p>
+        </section>
+
+    </div>
+
+
+    <script>
+        let realDate = document.getElementById("time");
+        realDate.textContent = new Date();
+    </script>
+</body>
+
+</html>

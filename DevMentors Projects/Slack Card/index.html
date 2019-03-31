@@ -28,18 +28,39 @@
                 </div>
             </div>
         </section>
-        <section>
+      <!--   <section>
             <p>
                 <em>Note: the buttons have class <code>profile-action</code></em>
             </p>
-        </section>
+        </section> -->
 
     </div>
 
 
     <script>
         let realDate = document.getElementById("time");
-        realDate.textContent = new Date();
+        realDate.textContent = new Date().toLocaleString();
+
+
+function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function startTime() {
+        let today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('demo').innerHTML = h + ":" + m + ":" + s + " local time";
+        t = setTimeout(function() {
+        startTime()
+        }, 500);
+    }
+startTime();
     </script>
 </body>
 
